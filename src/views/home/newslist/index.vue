@@ -1,6 +1,6 @@
 <template>
   <div class="newlist">
-    <!-- router-link  点击哪一条就跳转到对应的id上 -->
+    <!-- router-link  点击哪一条就跳转到对应的id上     -->
     <router-link :to="'/home/newslist/'+item.id" v-for="item in newslist" :key="item.id">
     <van-card :title="item.title" :thumb="item.img_url">
       <div slot="price">
